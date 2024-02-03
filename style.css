@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 8px;
+    height: 100%;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1024px;
+    gap: 16px;
+}
+
+.bundeslaender-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-bottom: 24px;
+    justify-content: space-between;
+}
+
+.land-container {
+    display: flex;
+    flex-direction: column;
+    width: 31%;
+    height: auto;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.land-container:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.filter-container {
+    padding-bottom: 32px;
+}
+
+@media (max-width: 800px) {
+    .land-container {
+        width: 49%;
+    }
+}
+
+@media (max-width: 500px) {
+    .land-container {
+        width: 100%;
+    }
+}
+
+
+
